@@ -1,6 +1,6 @@
-# 1. Especifica la imagen base que se usará (Node.js v20.11.0)
+# 1. Especifica la imagen base que se usará (Node.js v18.15.0)
 FROM node:18.15.0
-# Usa una imagen oficial de Node.js con la versión 20.11.0 ya instalada.
+# Usa una imagen oficial de Node.js con la versión 18.15.0 ya instalada.
 # Esto incluye un sistema operativo (Linux) + Node.js preinstalado.
 
 # 2. Define el directorio de trabajo dentro del contenedor

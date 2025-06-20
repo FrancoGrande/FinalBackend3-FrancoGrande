@@ -83,7 +83,18 @@ const uploadDocuments = async (req, res) => {
 };
 //------------------------------------------------------------------------------
 
+const createUser = async (req, res) => {
+  try {
+    const newUser = await usersService.create(req.body);
+    res.status(201).send({ status: "success", message: "User created", payload: newUser });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({ status: "error", error: "Failed to create user" });
+  }
+};
+
 export default {
+  createUser,
   deleteUser,
   getAllUsers,
   getUser,

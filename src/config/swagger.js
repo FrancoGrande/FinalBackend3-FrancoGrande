@@ -21,7 +21,7 @@ const swaggerOptions = {
         description: "Desarrollo",
       },
       {
-        url: "http://localhost:8080",
+        url: "http://localhost:3000",
         description: "Producción",
       },
     ],
