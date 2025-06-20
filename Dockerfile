@@ -1,6 +1,6 @@
-# 1. Especifica la imagen base que se usará (Node.js v18.15.0)
-FROM node:18.15.0
-# Usa una imagen oficial de Node.js con la versión 18.15.0 ya instalada.
+# 1. Especifica la imagen base que se usará (Node.js v22.12.0)
+FROM node:22.12.0
+# Usa una imagen oficial de Node.js con la versión 22.12.0 ya instalada.
 # Esto incluye un sistema operativo (Linux) + Node.js preinstalado.
 
 # 2. Define el directorio de trabajo dentro del contenedor
