@@ -22,8 +22,8 @@ program
 program.parse();
 // Extraer el modo
 mode = program.opts().mode;
-// Cargar archivo .env correspondiente
-process.loadEnvFile(mode === "prod" ? "./.env.prod" : "./.env.dev");
+import dotenv from 'dotenv';
+dotenv.config({ path: mode === "prod" ? "./.env.prod" : "./.env.dev" });
 
 // Configuración exportada
 const config = {
